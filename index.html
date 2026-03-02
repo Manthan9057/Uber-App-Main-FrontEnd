@@ -2,12 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="https://backend-752091880033.us-central1.run.app/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+
+    <!-- JS & CSS from backend with crossorigin -->
+    <script type="module" crossorigin src="https://backend-752091880033.us-central1.run.app/assets/index-BnZW-048.js"></script>
+    <link rel="stylesheet" crossorigin href="https://backend-752091880033.us-central1.run.app/assets/index-jaMoUKop.css">
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Optional: fallback script for error logging -->
+    <script>
+      window.addEventListener('error', (e) => {
+        console.error('Error loading resource:', e.filename, e.message);
+      });
+    </script>
   </body>
 </html>
